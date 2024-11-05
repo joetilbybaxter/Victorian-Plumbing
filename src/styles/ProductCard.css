@@ -1,0 +1,68 @@
+.product-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 12px 0 8px;
+    text-align: center;
+  }
+  
+  .product-price {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(207, 0, 16);
+  }
+
+  .product-card:hover .product-image {
+    transform: scale(1.05);
+  }
+
+  .product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image-wrapper {
+    width: 100%;
+    padding-top: 75%; /* 4:3 aspect ratio */
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
+
+  .best-seller{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 129, 185, 0.8);
+    padding: 0.125rem;
+    bottom: 0px;
+    line-height: 1.4;
+    font-family: "Filson Soft", sans-serif;
+    color: rgb(253, 253, 253);
+    font-weight: 400;
+  }

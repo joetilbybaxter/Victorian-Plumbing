@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* src/App.css */
+
+
+.listing-page {
+  display: flex;
+  gap: 1rem;
+  background-color: rgb(242, 240, 235);
+}
+
+.filter-panel {
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.product-grid {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: auto;
+}
+
+
+.sort-product-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.sort-panel{
+  width: 15%;
+  height: 3.5rem;
+  padding-top: 1.25rem;
+  border-radius: 0px;
+  color: rgb(34, 25, 36);
+  margin: 2rem;
+  margin-left: 10%;
+  background: rgb(255, 255, 255);
+  border: 0.0625rem solid rgb(222, 222, 222);
+  padding: 0px 0.9375rem;
+  transition: border 0.4s, box-shadow 0.4s;
+  appearance: none;
+}
+
+.filter-wrapper{
+  width: 15%;
+}
