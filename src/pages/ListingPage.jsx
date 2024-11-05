@@ -14,7 +14,7 @@ const ListingPage = () => {
     const loadProducts = async () => {
       setLoading(true);
       try {
-        const pageSize = 10; // Fetch 10 products per page
+        const pageSize = 10;
         const data = await fetchProducts({
           query: 'toilets',
           size: pageSize,
